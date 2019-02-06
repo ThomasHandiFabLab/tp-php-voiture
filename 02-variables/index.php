@@ -4,4 +4,4 @@
 $age = 27;
 
 // Je veux afficher le contenu de la variable 
-echo '<h1>Tu as<h1> ' .$age. ' <h1>ans.<h1>';
+echo '<h1>Tu as ' .$age. ' ans.<h1>';
