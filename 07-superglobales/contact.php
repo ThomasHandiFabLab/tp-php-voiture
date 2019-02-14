@@ -60,7 +60,7 @@ if (strlen($sujet) == 0) {
 }
 echo "<br/>";
 if (false == filter_var($email, FILTER_VALIDATE_EMAIL)) {
-  $isvalid = false;
+  $isvalid = false;g
   echo 'Cet email n\'est pas valide';
 }
 if ($isvalid) {
