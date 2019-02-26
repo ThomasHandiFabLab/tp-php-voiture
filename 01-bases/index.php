@@ -1,20 +1,13 @@
-
-
-<!DOCTYPE <!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
-    <title>Page Title</title>
+    <meta charset="UTF-8">
+    <title>PHP : Les bases</title>
 </head>
 <body>
-
     <?php
-
-    // Ici, je peux écrire mon code PHP
-    echo '<h1>L\'titre simple quote<h1>';
-    echo "<h1>L'titre double quotes<h1>";
-
+        // Ici, je peux écrire mon code PHP
+        echo '<h1>L\'titre</h1>';
     ?>
-
 </body>
 </html>
-

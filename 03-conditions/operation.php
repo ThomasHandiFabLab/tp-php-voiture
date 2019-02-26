@@ -1,43 +1,21 @@
 <?php
-$var1 = 15;
-$var2 = 5;
-$var3 = 8;
-$result1 = $var1+$var2+$var3;
-$result3 = ($var3-$var2)/$var1;
 
-echo $var1. " + " .$var2. " + " .$var3. " = " .$result1. " | "  ."</br>";
+$number1 = 15;
+$number2 = 5;
+$number3 = 8;
+$resultat1 = $number1 + $number2 + $number3;
+$resultat2 = $number1 * ($number2 - $number3);
+$resultat3 = 'Division par 0 impossible';
 
-echo $var1. " X (" .$var2. " - " .$var3. ") = " .$result2= $var1*($var2-$var3). " | " ."</br>";
+// Si le nombre 1 est différent de 0, on peut faire le calcul
+if ($number1 !== 0) {
+	$resultat3 = ($number3 - $number2) / $number1;
+}
 
-echo "(" .$var3. " - " .$var2. ") / " .$var1. " = " .$result3. " | " ."</br>";
+echo $number1 . ' + ' . $number2 . ' + ' . $number3 . ' = ' . $resultat1 . ' <br />';
+echo "$number1 x ($number2 - $number3) = $resultat2 <br />";
+echo "($number3 - $number2) / $number1 = $resultat3 <br />";
 
-if ($result1 < 20 || $result2 < 20 || $result3 < 20);
-
-echo "Une des opération renvoie moins de 20 !";
-
-// echo '<h1>Tu as ' .$age. ' ans.<h1>';
-
-// CORRECTION
-/*
-$var1 = 15;
-$var2 = 5;
-$var3 = 8;
-$result1 = $var1+$var2+$var3;
-$result3 = 'Division par 0 impossible';
-
-// Si le nombre est différent de 0, on peut faire le calcul
-if ($var1 !== 0) {
-    $result3 = ($var3 - $var2) / $var1;
-};
-
-echo $var1. " + " .$var2. " + " .$var3. " = " .$result1. " | "  ."</br>";
-
-echo $var1. " X (" .$var2. " - " .$var3. ") = " .$result2= $var1*($var2-$var3). " | " ."</br>";
-
-echo "(" .$var3. " - " .$var2. ") / " .$var1. " = " .$result3. " | " ."</br>";
-
-if ($result1 < 20 || $result2 < 20 || $result3 < 20);
-
-echo "Une des opération renvoie moins de 20 !";
-
-// echo '<h1>Tu as ' .$age. ' ans.<h1>';*/
+if ($resultat1 < 20 || $resultat2 < 20 || $resultat3 < 20) {
+	echo 'Une des opérations renvoie moins de 20';
+}

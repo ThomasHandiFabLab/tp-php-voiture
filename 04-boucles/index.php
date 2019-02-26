@@ -5,46 +5,37 @@
  * 
  * Présentation des boucles en PHP
  */
-echo '<h1> Les Boucles : </h1>';
-echo '<h2> Le For : </h2>';
 
- //for
+// for
+echo '<h2>La boucle for</h2>';
 
-for ($i = 0 ; $i < 10; $i++); {
-echo $i .'</br>';
-};
-
-echo '<h2> Le Foreach : </h2>';
-
- //foreach
-
-$students =['Mickael', 'Baptiste', 'Gregory', 'Thomas'];
-foreach ($students as /*$kiwi =>*/ $firstName) {
-    echo /*$kiwi . ' : ' . */ $firstName .'</br>';
-};
-
-echo '<h2> Le While : </h2>';
-
-// while
-
-$j = 0;
-while ($j < 10) {
-    $j++;  
-    echo $j."<br/>";
-};
-
-/* ou */
-
-$k = 0;
-while ($k++ < 10) {
-    echo 'a';
+for ($i = 0; $i < 10; $i++) {
+    echo $i;
 }
 
-echo '<h2> Le Do While : </h2>';
- // do ... while
+echo '<br />';
 
+// foreach
+echo '<h2>La boucle foreach</h2>';
 
-$l = 10;
+$students = ['Mickael', 'Baptiste', 'Gregory', 'Thomas'];
+
+foreach ($students as $index => $value) {
+    echo $index . ' : '. $value . '<br />';
+}
+
+// while
+echo '<h2>La boucle while</h2>';
+
+$i = 0;
+while ($i < 10) {
+    echo $i++;
+}
+
+// do ... while
+echo '<h2>La boucle do while</h2>';
+
+$i = 10;
 do {
-    echo $l++;
-} while ($l < 10);
+    echo $i++;
+} while ($i < 10);
